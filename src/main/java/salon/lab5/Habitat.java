@@ -137,6 +137,7 @@ public class Habitat {
                     birthTimeMap.put(System.currentTimeMillis(), femaleRequest);
                     uniqueIds.add(femaleRequest.hashCode());
 
+
                     // добавление объекта в визуализацию
                     visualizeObject(femaleRequest);
                 }
@@ -153,6 +154,8 @@ public class Habitat {
                     requestsMale.add(maleRequest);
                     birthTimeMap.put(System.currentTimeMillis(), maleRequest);
                     uniqueIds.add(maleRequest.hashCode());
+
+
 
                     // добавление объекта в визуализацию
                     visualizeObject(maleRequest);
@@ -234,6 +237,9 @@ public class Habitat {
             System.out.println("Создана заявка в женский зал");
             System.out.println(request);
 
+            // отладка
+            System.out.println(request.hashCode());
+
         }
         else if (request instanceof MaleRequest) {
             // Тогда делаем что-то для maleRequest
@@ -243,6 +249,10 @@ public class Habitat {
 
             System.out.println("Создана заявка в мужской зал");
             System.out.println(request);
+
+            // отладка
+            System.out.println(request.hashCode());
+
         }
         else {
             System.out.println("Неизвестная заявка была создана");
