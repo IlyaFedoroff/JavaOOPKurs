@@ -1,5 +1,7 @@
 package salon;
 
+
+
 import salon.lab5.*;
 import salon.lab5.classes.FemaleRequest;
 import javafx.application.Application;
